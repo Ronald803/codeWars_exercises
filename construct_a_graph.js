@@ -31,44 +31,69 @@
 // If no points are given, the graph should just include the position (0, 0). Points might have the same value sometimes.
 
 function constructGraph(points) {
+    if(points.length===0){return [["+"]]}
     let ancho = [0,0];
     let alto = [0,0];
     if(points.length===1){
         points[0].x>0 ? ancho = [0,points[0].x] : ancho = [-points[0].x,0]
         points[0].y>0 ? alto = [0,points[0].y] : alto = [-points[0].y,0]
     } else {
-        let x = [points[0].x,points[1].x]
-        let y = [points[0].y,points[1].y]
-        x.sort( (a,b)=> a-b )
-        y.sort( (a,b)=> a-b )
-        console.log({x},{y});
-        x[0]<0 ? ancho = [-x[0],x[1]] : ancho = [0,x[1]]
-        y[0]<0 ? alto = [-y[0],y[1]] : alto = [0,y[1]]
+        // let x = [points[0].x,points[1].x]
+        // let y = [points[0].y,points[1].y]
+        // x.sort( (a,b)=> a-b )
+        // y.sort( (a,b)=> a-b )
+        // //console.log({x},{y});
+        // x[0]<0 ? ancho = [-x[0],x[1]] : ancho = [0,x[1]]
+        // y[0]<0 ? alto = [-y[0],y[1]] : alto = [0,y[1]]
+        let anchura=[]
+        let altura=[]
+        points.map(p=>{
+            anchura.push(p.x);
+            altura.push(p.y)
+        })
+        anchura.sort((a,b)=> a-b)
+        altura.sort((a,b)=> a-b)
+        anchura[0]<0                ? ancho[0] = -anchura[0]                : ancho[0] = 0
+        anchura[anchura.length-1]>0 ? ancho[1] = anchura[anchura.length-1]  : ancho[1] = 0
+        altura[0]<0                 ? alto[0] = -altura[0]                  : alto[0] = 0
+        altura[altura.length-1]>0   ? alto[1] = altura[altura.length-1]     : alto[1] = 0
+        console.log({anchura},{altura});
     }
     let mapa = []
-    function crearFila(a){
+    function crearFila(a,b,c){
         let fila = []
         for(let i=0;i<a[0];i++){
-            fila.push(" ")
+            fila.push(b)
         }
-        fila.push("|")
+        fila.push(c)
         for(let j=0;j<a[1];j++){
-            fila.push(" ")
+            fila.push(b)
         }
         return fila
     }
     for(let k=0;k<alto[1];k++){
-        mapa.push(crearFila(ancho))
+        mapa.push(crearFila(ancho," ","|"))
     }
-    mapa.push(["-","-","-"])
+    mapa.push(crearFila(ancho,"-","+"))
     for(let l=0;l<alto[0];l++){
-        mapa.push(crearFila(ancho))
+        mapa.push(crearFila(ancho," ","|"))
     }
-    //console.log(crearFila(ancho))
-    console.log({ancho},{alto});
-    //console.log({fila});
-    console.log({mapa})
-    return [[' ']];
+    
+    function posicionar(i,j){
+        //console.log({i},{j});
+        let aux = [0,0]
+        //console.log({ancho},{alto});
+        if(alto[1]===-1){alto[1]++}
+        aux[0]=ancho[0]+i 
+        aux[1]=alto[1]-j 
+        return aux
+    }
+    for(let z=0;z<points.length;z++){
+        const w = posicionar(points[z].x,points[z].y)
+        mapa[w[1]][w[0]] = "*"
+    }
+    //console.log(posicionar(points[0].x,points[0].y));
+    return mapa;
 }
 
-console.log(constructGraph([{x: -1, y: 5},{x: 3, y: 2}]));
+console.log(constructGraph([{x: -2, y: -2}, {x: 0, y: 0}]));
