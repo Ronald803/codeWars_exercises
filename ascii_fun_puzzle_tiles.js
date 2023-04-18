@@ -16,27 +16,37 @@
 //  |__( )_|__( )_|__( )_|__( )_|
 
 function puzzleTiles(width, height){
-	let fila1 = "   _( )__ "
-    let fila2 = " _|     _|"
-    let fila3 = "(_   _ (_ "
-    let fila4 = "  |__( )_|"
-    //return [fila1,fila2,fila3,fila4]
-    let f1 = []
-    let f2 = []
-    let f3 = []
-    let f4 = []
+	let fila1 = "_( )__ "
+    let fila2 = "     _|"
+    let fila3 = "  _ (_ "
+    let fila4 = "_( )_| "
+    let f1 = ["   "]
+    let f2 = [" _|"]
+    let f3 = ["(_ "]
+    let f4 = [" |_"]
     for(let i=0;i<width;i++){
         f1.push(fila1)
         f2.push(fila2)
         f3.push(fila3)
         f4.push(fila4)
     }
-    console.log(f1);
+    f1 = f1.join("")
+    f2 = f2.join("")
+    f3 = f3.join("")
+    f4 = f4.join("")
+    f2 = `\n${f2}`
+    f3 = `\n${f3}`
+    f4 = `\n${f4}`
+    //console.log(f1);
+    let final = f1
     for(let j=0;j<height;j++){
-        console.log(f2);
-        console.log(f3);
-        console.log(f4);
+        final = final+f2+f3+f4
+        //console.log(f2);
+        //console.log(f3);
+        //console.log(f4);
     }
+    return final
 }
 
-console.log(puzzleTiles(3,2));
+console.log(puzzleTiles(1,1));
+console.log("   _( )__\n _|     _|\n(_   _ (_\n |__( )_|");
