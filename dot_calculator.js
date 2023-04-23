@@ -53,4 +53,4 @@ function dotCalculator (equation) {
     return string.join("")
 }
 
-console.log(dotCalculator("...... // .."));
+console.log(dotCalculator("...... - .."));
