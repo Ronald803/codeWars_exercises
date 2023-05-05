@@ -13,21 +13,21 @@ function largestPalindromeProduct(n) {
     }
     let limites = [10**(n-1),(10**n)-1]
     console.log({limites});
-    let final = false
-    
     let palindromos = []
-    for(let j=0 ; j<10 ; j++){
-        let producto = 0;
+    let producto = 0
+    while(limites[0]!==limites[1]){
+        let final = false
         let i = 0;
         while(final === false){
             producto = limites[1]*(limites[1]-i)
-            if(esPalindromo(producto)){final = true;limites[1]=limites[1]-1}
+            if(esPalindromo(producto)){final = true;limites[1]=limites[1]-1;palindromos.push(producto)}
+            else if(producto<palindromos[palindromos.length-1]){final=true;limites[1]=limites[1]-1}
             i++
         }
-        palindromos.push(producto)
     }
+    palindromos.sort((a,b)=>a-b)
     console.log({limites});
     console.log({palindromos});
-    return n;
+    return palindromos[palindromos.length-1];
 }
-console.log(largestPalindromeProduct(2));
+console.log(largestPalindromeProduct(3));
