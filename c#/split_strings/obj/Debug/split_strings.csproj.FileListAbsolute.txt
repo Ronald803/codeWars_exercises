@@ -1,0 +1,8 @@
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\split_strings\bin\Debug\split_strings.exe.config
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\split_strings\bin\Debug\split_strings.exe
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\split_strings\bin\Debug\split_strings.pdb
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\split_strings\obj\Debug\split_strings.csproj.AssemblyReference.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\split_strings\obj\Debug\split_strings.csproj.SuggestedBindingRedirects.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\split_strings\obj\Debug\split_strings.csproj.CoreCompileInputs.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\split_strings\obj\Debug\split_strings.exe
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\split_strings\obj\Debug\split_strings.pdb

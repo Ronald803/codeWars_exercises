@@ -13,11 +13,25 @@ function primeFactors(n){
             residuo = residuo/factor[factor.length-1][0]
         }else{
             let i = 1;
-            console.log(factor[factor.length-1][0]);
-            while(residuo%(factor[factor.length-1][0]+i)!=0){i++};
-            factor.push([factor[factor.length-1]+i-1,0])
+            let aux = factor[factor.length-1][0]
+            console.log({aux},{i},{residuo},{factor});
+            while(residuo%(aux+i) !== 0){i++};
+            console.log({i});
+            factor.push([aux+i,0])
         }
     }
-    return factor
+    factor = factor.filter(element=>element[1]>0)
+    factor.map((elem,index)=>{if(elem[1]===1){factor[index]=[elem[0]]}})
+    let string = []
+    factor.map(element=>{
+        if(element.length>1){
+            string.push(`(${element[0]}**${element[1]})`)
+        } else {
+            string.push(`(${element[0]})`)
+        }
+        
+    })
+    console.log(string.join(""));
+    return string.join("")
 }
-console.log(primeFactors(12));
+console.log(primeFactors(60));

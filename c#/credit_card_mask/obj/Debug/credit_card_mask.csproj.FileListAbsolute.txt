@@ -1,0 +1,8 @@
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\credit_card_mask\bin\Debug\credit_card_mask.exe.config
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\credit_card_mask\bin\Debug\credit_card_mask.exe
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\credit_card_mask\bin\Debug\credit_card_mask.pdb
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\credit_card_mask\obj\Debug\credit_card_mask.csproj.AssemblyReference.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\credit_card_mask\obj\Debug\credit_card_mask.csproj.SuggestedBindingRedirects.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\credit_card_mask\obj\Debug\credit_card_mask.csproj.CoreCompileInputs.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\credit_card_mask\obj\Debug\credit_card_mask.exe
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\credit_card_mask\obj\Debug\credit_card_mask.pdb

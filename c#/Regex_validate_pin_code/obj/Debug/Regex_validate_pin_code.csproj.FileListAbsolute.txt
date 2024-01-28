@@ -1,0 +1,8 @@
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\Regex_validate_pin_code\bin\Debug\Regex_validate_pin_code.exe.config
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\Regex_validate_pin_code\bin\Debug\Regex_validate_pin_code.exe
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\Regex_validate_pin_code\bin\Debug\Regex_validate_pin_code.pdb
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\Regex_validate_pin_code\obj\Debug\Regex_validate_pin_code.csproj.AssemblyReference.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\Regex_validate_pin_code\obj\Debug\Regex_validate_pin_code.csproj.SuggestedBindingRedirects.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\Regex_validate_pin_code\obj\Debug\Regex_validate_pin_code.csproj.CoreCompileInputs.cache
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\Regex_validate_pin_code\obj\Debug\Regex_validate_pin_code.exe
+C:\Users\sanan\OneDrive\Documentos\web-dev\codewars\c#\Regex_validate_pin_code\obj\Debug\Regex_validate_pin_code.pdb
